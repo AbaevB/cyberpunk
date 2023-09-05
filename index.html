@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cyberpunk 2077</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -13,7 +15,7 @@
       <a href="#" class="header__logo">
         <img src="img/header/header__logo.svg" alt="Киберпанк 2077">
       </a>
-      <ul class="social header__social">
+      <ul class="social header__social list-reset flex">
         <li class="social__item">
           <a href="#" class="social__link social__link_youtube"></a>
         </li>
@@ -37,7 +39,7 @@
   </header>
   <main class="main">
     <section class="section hero">
-      <h1 class="visually-idden">
+      <h1 class="visually-hidden">
         Киберпанк 2077
       </h1>
       <div class="swiper-container hero__slider">
@@ -49,7 +51,7 @@
       </div>
       <div class="container hero__container">
         <div class="hero-info cut-corners">
-          <h2 class="hero-info__title">
+          <h2 class="section__title hero-info__title">
             Доступно на всех платформах
           </h2>
           <button class="btn-reset hero-info__btn">
@@ -102,7 +104,7 @@
           <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form game__form">
             <input type="text" name="username" id="user" class="fom__input">
             <input type="email" name="useremail" id="email" class="form__input">
-            <label for="screenshot" class="form-label">
+            <label for="userscreen" class="form-label">
               <input type="file" name="screenshot" id="userscreen" class="form-label__input">
               <span class="form-label__text">
                 Прикрепить скриншот
@@ -111,7 +113,7 @@
             <button type="submit" class="btn-reset form__btn">
               Отправить
             </button>
-            <label for="" class="form__checkbox checkbox">
+            <label for="userconfirm" class="form__checkbox checkbox">
               <input type="checkbox" class="checkbox__input" name="confirm" id="userconfirm">
               <span class="checkbox__text">
                 Согласен на обработку персональных данных
@@ -160,10 +162,10 @@
               style="background-image: url('img/hp/hp__gameplay.svg'); background-repeat: no-repeat;">
               Быстрые движения и&nbsp;плавный геймплей
             </li>
-            <button class="btn-reset hp__btn">
-              Подробнее
-            </button>
           </ul>
+          <button class="btn-reset hp__btn">
+            Подробнее
+          </button>
         </div><!--/hp__right-->
       </div><!--/container-->
     </section>
@@ -197,7 +199,7 @@
           <p class="buy__subtitle">
             Выберите платформу:
           </p>
-          <ul class="platforms-list">
+          <ul class="platforms-list list-reset">
             <li class="platforms-list__item platforms-lust__item_1">
               <a href="#" class="link platforms-list__link">
                 <img src="img/buy/buy__pc.svg" alt="PC">
@@ -225,22 +227,22 @@
   <footer class="footer">
     <div class="footer__top">
       <div class="container footer__container">
-<div class="footer__left">
-<a href="#" class="link footer__link">
-  <img src="img/footer/footer__cyberpunk-logo.svg" alt="Лого Cyberpunk 2077">
-</a>
-<a href="#" class="link footer__link">
-  <img src="img/footer/footer__cdproject-logo.svg" alt="Лого CD Project Red">
-</a>
-</div>
-<div class="footer__right">
-<a href="#" class="link footer__link">
-  Лицензия
-</a>
-<a href="#" class="link footer__link">
-  Политика конфиденциальности
-</a>
-</div>
+        <div class="footer__left">
+          <a href="#" class="link footer__link">
+            <img src="img/footer/footer__cyberpunk-logo.svg" alt="Лого Cyberpunk 2077">
+          </a>
+          <a href="#" class="link footer__link">
+            <img src="img/footer/footer__cdproject-logo.svg" alt="Лого CD Project Red">
+          </a>
+        </div>
+        <div class="footer__right">
+          <a href="#" class="link footer__link">
+            Лицензия
+          </a>
+          <a href="#" class="link footer__link">
+            Политика конфиденциальности
+          </a>
+        </div>
       </div><!--/container-->
     </div>
     <div class="footer__bottom">
